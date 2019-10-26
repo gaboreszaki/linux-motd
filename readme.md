@@ -5,7 +5,7 @@
 
 Clone the repo with:
 ```
-git clone git@bitbucket.org:northwebsolution/linux-motd.git ~/linux-motd
+git clone git@github.com:gaboreszaki/linux-motd.git ~/linux-motd
 ```
 
 Run the following command:
