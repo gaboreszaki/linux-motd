@@ -1,6 +1,9 @@
 # North Web Solution - Linux MOTD creator
 *TO USE THIS APPLICATION YOU NEED TO RUN THE SETUP IN SUDO MODE*
 
+![result]( images/result.png | width=100 )
+
+
 ## Setup
 
 Clone the repo with:
@@ -12,6 +15,9 @@ Run the following command:
 ```
 cd ~/linux-motd && sudo chmod +x setup.sh && sudo ./setup.sh
 ```
+![result]( images/sertup_1.png | width=100 )
+![result]( images/sertup_2.png | width=100 )
+
 
 ## Update
 ```
