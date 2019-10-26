@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+NETWORKCARD=`cat /etc/update-motd.d/motd_networkcard | awk '{print $1}'`
+NETWORKADDRESS=`ifconfig $NETWORKCARD | grep "inet " | awk '{print}' `
+
+NETWORKADDRESS_NW="$(echo -e ${NETWORKADDRESS} | xargs )"
+
+cat << EOF
+ Public Address.....:  ${NETWORKADDRESS_NW}
+
+EOF

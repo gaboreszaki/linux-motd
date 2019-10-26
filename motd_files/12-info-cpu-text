@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+
+cat << EOF
+ CPU................:`cat /proc/cpuinfo | grep 'model name' | head -1 | cut -d':' -f2`
+ CPU Load...........: `cat /proc/loadavg | awk '{print $1 ", " $2 ", " $3}'`
+ Running Processes..: `ps ax | wc -l | tr -d " "`
+
+EOF

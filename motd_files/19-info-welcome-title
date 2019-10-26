@@ -1,0 +1,6 @@
+#!/bin/sh
+#
+
+cat << EOF
+Welcome `whoami` at `cat /proc/sys/kernel/hostname`...
+EOF
