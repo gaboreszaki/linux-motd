@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+
+cat << EOF
+ Total Memory.......: `free -m | head -n 2 | tail -n 1 | awk {'print $2'}`MB
+ Used Memory........: `free -m | head -n 2 | tail -n 1 | awk {'print $3'}`MB
+ Free Memory........: `free -m | head -n 2 | tail -n 1 | awk {'print $4'}`MB
+
+EOF

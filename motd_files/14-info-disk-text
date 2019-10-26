@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+
+cat << EOF
+ Disk...............: `df -h / | awk '{ a = $2 } END { print a }'`
+ Used Disk..........: `df -h / | awk '{ a = $3 } END { b = $5 } END { print $3, "/", $5 }'`
+ Free Disk..........: `df -h / | awk '{ a = $4 } END { print a }'`
+
+ Swap...............: `free -m | tail -n 1 | awk {'print $2'}`M
+ Free Swap..........: `free -m | tail -n 1 | awk {'print $4'}`M
+
+EOF
