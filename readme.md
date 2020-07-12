@@ -44,7 +44,7 @@ pi@NorthMedia:~ $
 
 Clone the repo with:
 ```
-git clone git@github.com:gaboreszaki/linux-motd.git ~/linux-motd
+git clone https://github.com/gaboreszaki/linux-motd.git ~/linux-motd
 ```
 
 Run the following command:
